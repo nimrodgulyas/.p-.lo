@@ -137,3 +137,15 @@ void Teglalap (int sorszam, int magassag)
         Console.WriteLine();
     }
 }
+
+Kiir("Sikeres mentés.", Console.Color.Green);
+Kiir("Kevés a szabad hely!", Console.Color.Yellow);
+Kiir("Hiba történt!", Console.Color.Red);
+Console.WriteLine("Ez már az alap szín.");
+
+void(string szoveg, Console.Color szin)
+    {
+    Console.ForegroundColor = szin;
+    Console.WriteLine(szoveg);
+    Console.ResetColor();
+}
